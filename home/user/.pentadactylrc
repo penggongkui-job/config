@@ -1,0 +1,16 @@
+"hg6984
+
+loadplugins '\.(js|penta)$'
+group user
+highlight Hint font: bold 10px "Droid Sans Mono", monospace !important; margin: -.2ex; padding: 0 0 0 1px; outline: 1px solid rgba(0, 0, 0, .5); background: rgba(255, 248, 231, .8); color: black; text-transform: uppercase;
+map -count -modes=i <A-n> <Down>
+map -count -modes=i <A-p> <Up>
+map -count -modes=n,v h -builtin <count>H
+map -count -modes=n,v H -builtin <count>h
+map -count -modes=n,v l -builtin <count>L
+map -count -modes=n,v L -builtin <count>l
+set hintkeys=asdfg;lkjh
+set nextpattern='下一页|下一张','^Next [>»]','^Next »','\bnext\b',^>$,'^(>>|»)$','^(>|»)','(>|»)$','\bmore\b'
+set previouspattern=上一页,'[<«] Prev$','« Prev$','\bprev(ious)?\b',^<$,'^(<<|«)$','^(<|«)','(<|«)$'
+
+" vim: set ft=pentadactyl:
