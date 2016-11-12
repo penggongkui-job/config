@@ -1,0 +1,9 @@
+! solarized color
+#include "src/github.com/solarized/xresources/solarized"
+
+! scrollBar
+xterm*scrollBar: false
+
+! fonts
+xterm*faceName: DejaVu Sans Mono for Powerline:style=Book:pixelsize=12
+xterm*faceNameDoublesize: Microsoft YaHei Mono:style=Regular:pixelsize=12

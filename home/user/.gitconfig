@@ -1,0 +1,19 @@
+[user]
+	email = penggongkui@yidian-inc.com
+	name = penggongkui
+[push]
+	default = matching
+[credential]
+	helper = store
+
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+
+[alias]
+	ci = commit -a
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	br = branch
+	co = checkout
