@@ -1,9 +1,21 @@
 ! solarized color
-#include "src/github.com/solarized/xresources/solarized"
+#include "/home/penggongkui/src/github.com/solarized/xresources/Xresources.dark"
 
 ! scrollBar
 xterm*scrollBar: false
 
 ! fonts
-xterm*faceName: DejaVu Sans Mono for Powerline:style=Book:pixelsize=12
+!xterm*faceName: DejaVu Sans Mono for Powerline:pixelsize=12
+xterm*faceName: SauceCodePro Nerd Font Mono:pixelsize=13
 xterm*faceNameDoublesize: Microsoft YaHei Mono:style=Regular:pixelsize=12
+!xterm*font: fixed
+!xterm*boldFont: fixed
+xterm*fullscreen: true
+xterm*boldColors: false
+
+!xterm*allowBoldFonts: false
+
+! alt as meta
+xterm*metaSendsEscape: true
+xterm*termName: xterm-256color
+
