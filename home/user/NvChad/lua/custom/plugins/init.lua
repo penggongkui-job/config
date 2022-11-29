@@ -8,7 +8,7 @@ return {
   },
   ["lukas-reineke/lsp-format.nvim"] = {
     config = function ()
-      require "custom.plugins.lsp-format"
+      require "custom.plugins.lsp_format"
     end
   },
   ["neovim/nvim-lspconfig"] = {
@@ -32,6 +32,12 @@ return {
         custom = {"__pycache__"},
       },
       open_on_setup = true,
+      renderer = {
+        symlink_destination = false,
+      },
+      live_filter = {
+        always_show_folders = false,
+      },
     }
   },
   ["tpope/vim-fugitive"] = {},
@@ -39,6 +45,24 @@ return {
     override_options = {
       indent = {
         disable = {"python"},
+      },
+    },
+  },
+  ["williamboman/mason.nvim"] = {
+    override_options = {
+      ensure_installed = {
+        -- lua stuff
+        "lua-language-server",
+        "stylua",
+
+        -- shell
+        "shfmt",
+        "shellcheck",
+
+        --python
+        "pyright",
+        "black",
+        "isort",
       },
     },
   },

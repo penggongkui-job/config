@@ -14,6 +14,15 @@ local sources = {
   b.formatting.isort.with({
     args = {"--profile", "black","--stdout", "-"},
   }),
+
+  -- Lua
+  -- b.formatting.stylua,
+
+  -- Shell
+  b.formatting.shfmt.with{
+    args = {"-i", "2", "-ci", "-bn", "-filename", "$FILENAME"}
+  },
+  b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
 }
 
 null_ls.setup {
