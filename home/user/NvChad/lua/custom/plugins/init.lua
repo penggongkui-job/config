@@ -1,4 +1,10 @@
 return {
+  ["goolord/alpha-nvim"] = {
+    disable = false,
+    config = function ()
+      require'alpha'.setup(require'alpha.themes.theta'.config)
+    end,
+  },
   ["Vimjas/vim-python-pep8-indent"] = {},
   ["jose-elias-alvarez/null-ls.nvim"] = {
     after = "nvim-lspconfig",
