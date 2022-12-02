@@ -2,7 +2,7 @@
 	email = mnlm1991@gmail.com
 	name = penggongkui
 [push]
-	default = matching
+	default = current
 [credential]
 	helper = store
 
@@ -17,3 +17,5 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	br = branch
 	co = checkout
+[pull]
+	rebase = true
