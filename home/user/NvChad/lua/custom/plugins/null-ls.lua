@@ -23,6 +23,9 @@ local sources = {
     args = {"-i", "2", "-ci", "-bn", "-filename", "$FILENAME"}
   },
   b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
+
+  -- ts
+  b.formatting.prettierd,
 }
 
 null_ls.setup {

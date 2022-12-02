@@ -69,7 +69,24 @@ return {
         "pyright",
         "black",
         "isort",
+
+        -- js/ts/tsx
+        "typescript-language-server",
+        "eslint-lsp",
+        "prettierd",
       },
     },
   },
+  ['tzachar/cmp-tabnine'] = {
+    run = './install.sh',
+    requires = 'hrsh7th/nvim-cmp',
+    config = function()
+      require "custom.plugins.tabnine"
+    end
+  },
+  ["hrsh7th/nvim-cmp"] = {
+    override_options = function()
+      return require "custom.plugins.cmp"
+    end
+  }
 }

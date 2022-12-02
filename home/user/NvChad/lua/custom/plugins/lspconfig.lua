@@ -3,7 +3,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local _, lspconfig = pcall(require, "lspconfig")
 
-local servers = {"pyright"}
+local servers = {"pyright", "tsserver", "eslint"}
 
 local lsp_format = require "lsp-format"
 
