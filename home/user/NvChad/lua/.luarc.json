@@ -1,0 +1,7 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema-zh-cn.json",
+  "workspace.library": [
+    "~/.local/share/nvim/site/pack/packer/opt",
+    "${3rd}/luassert/library"
+  ]
+}

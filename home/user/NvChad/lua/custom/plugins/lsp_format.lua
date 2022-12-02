@@ -1,5 +1,5 @@
-require("lsp-format").setup {
-  python = {
-    exclude = {"pyright"},
-  }
-}
+require("lsp-format").setup({
+	python = {
+		exclude = { "pyright" },
+	},
+})

@@ -3,8 +3,8 @@
 local M = {}
 
 M.ui = {
-  theme = "solarized_dark",
+	theme = "solarized_dark",
 }
-M.plugins = require "custom.plugins"
+M.plugins = require("custom.plugins")
 
 return M
