@@ -30,14 +30,13 @@ return {
 			},
 		},
 	},
-	["kyazdani42/nvim-tree.lua"] = {
+	["nvim-tree/nvim-tree.lua"] = {
 		event = "VimEnter",
 		override_options = {
 			filters = {
 				dotfiles = true,
 				custom = { "__pycache__" },
 			},
-			open_on_setup = true,
 			renderer = {
 				symlink_destination = false,
 			},
