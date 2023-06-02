@@ -55,4 +55,8 @@ return {
 		dependencies = "cmp-tabnine",
 		opts = require("custom.configs.cmp").opts,
 	},
+	{
+		"nvim-telescope/telescope.nvim",
+		opts = overrides.telescope,
+	},
 }

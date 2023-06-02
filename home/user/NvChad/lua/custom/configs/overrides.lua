@@ -99,4 +99,9 @@ M.tabline = {
 	show_prediction_strength = true,
 }
 
+M.telescope = {
+	defaults = {
+		prompt_prefix = "   ",
+	},
+}
 return M
