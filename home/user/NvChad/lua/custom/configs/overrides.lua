@@ -69,6 +69,7 @@ M.nvimtree = {
 			},
 			glyphs = {
 				folder = {
+					-- nerdfont 2.3.3 not include the 3.0.1 new icon
 					default = "",
 				},
 			},
@@ -101,6 +102,7 @@ M.tabline = {
 
 M.telescope = {
 	defaults = {
+		-- iterm2 3.4 can't render defaults icon \uf002
 		prompt_prefix = "   ",
 	},
 }
