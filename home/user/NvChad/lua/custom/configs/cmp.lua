@@ -1,17 +1,18 @@
-local source_mapping = {
-	buffer = "[Buf]",
-	nvim_lsp = "[LSP]",
-	nvim_lua = "[Lua]",
-	cmp_tabnine = "[TN]",
-	path = "[Path]",
-}
-local present, compare = pcall(require, "cmp.config.compare")
-if not present then
-	return {}
-end
+local M = {}
+function M.opts(_, opts)
+	local source_mapping = {
+		buffer = "[Buf]",
+		nvim_lsp = "[LSP]",
+		nvim_lua = "[Lua]",
+		cmp_tabnine = "[TN]",
+		path = "[Path]",
+	}
+	local present, compare = pcall(require, "cmp.config.compare")
+	if not present then
+		return {}
+	end
 
-return {
-	formatting = {
+	opts.formatting = {
 		format = function(entry, vim_item)
 			local icons = require("nvchad_ui.icons").lspkind
 			vim_item.kind = string.format("%s %s", icons[vim_item.kind], vim_item.kind)
@@ -31,8 +32,8 @@ return {
 			vim_item.abbr = string.sub(vim_item.abbr, 1, maxwidth)
 			return vim_item
 		end,
-	},
-	sorting = {
+	}
+	opts.sorting = {
 		priority_weight = 2,
 		comparators = {
 			require("cmp_tabnine.compare"),
@@ -45,12 +46,14 @@ return {
 			compare.length,
 			compare.order,
 		},
-	},
-	sources = {
+	}
+	opts.sources = {
 		{ name = "cmp_tabnine" },
 		{ name = "nvim_lsp" },
 		{ name = "buffer" },
 		{ name = "nvim_lua" },
 		{ name = "path" },
-	},
-}
+	}
+end
+
+return M
