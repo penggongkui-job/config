@@ -67,12 +67,6 @@ M.nvimtree = {
 			show = {
 				git = true,
 			},
-			glyphs = {
-				folder = {
-					-- nerdfont 2.3.3 not include the 3.0.1 new icon
-					default = "",
-				},
-			},
 		},
 	},
 
