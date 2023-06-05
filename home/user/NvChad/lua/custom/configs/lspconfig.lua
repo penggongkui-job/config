@@ -1,9 +1,9 @@
--- custom.plugins.lspconfig
+-- custom.configs.lspconfig
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local _, lspconfig = pcall(require, "lspconfig")
 
-local servers = { "pyright", "tsserver", "eslint", "jsonls" }
+local servers = { "pyright", "tsserver", "eslint", "jsonls", "gopls" }
 
 local lsp_format = require("lsp-format")
 
