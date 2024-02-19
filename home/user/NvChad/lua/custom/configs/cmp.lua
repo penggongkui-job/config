@@ -14,7 +14,7 @@ function M.opts(_, opts)
 
 	opts.formatting = {
 		format = function(entry, vim_item)
-			local icons = require("nvchad_ui.icons").lspkind
+			local icons = require("nvchad.icons.lspkind")
 			vim_item.kind = string.format("%s %s", icons[vim_item.kind], vim_item.kind)
 			vim_item.menu = source_mapping[entry.source.name]
 			if entry.source.name == "cmp_tabnine" then
